@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <FrameLayout
+        android:id="@+id/fr_layout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:id="@+id/listFilm1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="bottom"
+            android:orientation="vertical"
+            android:paddingStart="5dp"
+            android:paddingEnd="5dp">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cvFilm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginBottom="5dp"
+                app:cardBackgroundColor="@color/lavender"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="3dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="120dp"
+                    android:layout_marginStart="105dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/tvTitle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="7dp"
+                            android:layout_marginBottom="5dp"
+                            android:text="Happiness For Beginners (2023)"
+                            android:textColor="@android:color/white"
+                            android:textSize="18sp" />
+
+                        <TextView
+                            android:id="@+id/tvDesc"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="40dp"
+                            android:ellipsize="end"
+                            android:maxLines="2"
+                            android:text="@string/synopsis_happines_for_begginers"
+                            android:textAlignment="viewStart"
+                            android:textColor="@android:color/black"
+                            android:textSize="12sp" />
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start|center"
+            android:layout_marginStart="20dp"
+            android:layout_marginBottom="10dp"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/imgPhoto"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginEnd="10dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/happiness_for_beginners"/>
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/fr_layout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/fr_layout1">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="bottom"
+            android:orientation="vertical"
+            android:paddingStart="5dp"
+            android:paddingEnd="5dp">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cvFilm2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginBottom="5dp"
+                app:cardBackgroundColor="@color/lavender"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="3dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="120dp"
+                    android:layout_marginStart="105dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/tvTitle2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginBottom="5dp"
+                            android:text="LOVE IN TAIPEI (2023)"
+                            android:textColor="@android:color/white"
+                            android:textSize="18sp" />
+
+                        <TextView
+                            android:id="@+id/tvDesc2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="30dp"
+                            android:ellipsize="end"
+                            android:maxLines="2"
+                            android:text="@string/synopsis_love_in_taipei"
+                            android:textAlignment="viewStart"
+                            android:textColor="@android:color/black"
+                            android:textSize="12sp" />
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start|center"
+            android:layout_marginStart="20dp"
+            android:layout_marginBottom="10dp"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/imgPhoto2"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginEnd="10dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/love_in_taipei"/>
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/fr_layout3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/fr_layout2">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="bottom"
+            android:orientation="vertical"
+            android:paddingStart="5dp"
+            android:paddingEnd="5dp">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cvFilm3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginBottom="5dp"
+                app:cardBackgroundColor="@color/lavender"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="3dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="120dp"
+                    android:layout_marginStart="105dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/tvTitle3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="7dp"
+                            android:layout_marginBottom="5dp"
+                            android:text="IMMORTAL VAMPIRE (2022)"
+                            android:textColor="@android:color/white"
+                            android:textSize="18sp" />
+
+                        <TextView
+                            android:id="@+id/tvDesc3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="40dp"
+                            android:ellipsize="end"
+                            android:maxLines="2"
+                            android:text="@string/synopsis_immortal_vampire"
+                            android:textAlignment="viewStart"
+                            android:textColor="@android:color/black"
+                            android:textSize="12sp" />
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start|center"
+            android:layout_marginStart="20dp"
+            android:layout_marginBottom="10dp"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/imgPhoto3"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginEnd="10dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/immortal_vampire"/>
+
+        </LinearLayout>
+
+    </FrameLayout>
+</RelativeLayout>
